@@ -1,0 +1,10 @@
+[
+    {
+        "message": "Hello world",
+        "value": 35
+    },
+    {
+        "message": "from data.json",
+        "value": 65
+    }
+]

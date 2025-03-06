@@ -1,0 +1,37 @@
+{
+	"name": "JupyterLab",
+	"postCreateCommand": "./.devcontainer/setup.sh",
+	"overrideCommand": false,
+	"forwardPorts": [8888],
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": ["--env-file", "${localWorkspaceFolder}/.devcontainer/.env", "--name", "JupyterNotebook"],
+	"workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind",
+	"workspaceFolder": "/home/jovyan/work",
+	"portsAttributes": {
+		"8888": {
+			"label": "Jupyter",
+			"requireLocalPort": true,
+			"onAutoForward": "ignore"
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"username": "jovyan",
+			"userUid": "1000",
+			"userGid": "1000",
+			"upgradePackages": "true"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-toolsai.jupyter",
+				"ms-python.python"
+			]
+		}
+	},
+}

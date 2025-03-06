@@ -1,0 +1,8 @@
+{
+  "name": "jupyter-devcontainer",
+  "description": "This repository is a simple vscode dev container that can pops a Juniper instance in just a few clics.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {}
+}

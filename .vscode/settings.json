@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vscode": true,
+        "**/jovyan": true,
+        "**/node_modules": true,
+        "**/package-lock.json": true,
+        "**/.devcontainer": true,
+        "**/.gitignore": true,
+    },
+    "workbench.colorTheme": "Default Light Modern",
+    "terminal.integrated.tabs.defaultColor": null,
+    "window.autoDetectColorScheme": false
+}
