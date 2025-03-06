@@ -4,6 +4,8 @@ This repository is a simple vscode dev container that can pops a Juniper instanc
 
 ## How to use this
 
+### Locally
+
 1. Install prerequisites: WSL2 (for Windows users), DockerDesktop, and vscode.
 2. Clone the repository.
 3. Open the folder using vscode **in container mode**.
@@ -12,3 +14,10 @@ This repository is a simple vscode dev container that can pops a Juniper instanc
 > The Jupyter server url is **`http://localhost:8888`**.
 
 > The password for the server is **`password`** (can be changed it in the `.devcontainer/.env` file, you'll need to rebuild the container for the changes to take effect).
+
+### Using Codespaces
+
+Create a codespace from the repository (`Code` button bellow, `Codespaces` tab)
+After codespace is created, you can open it in JupyterLab
+
+![Using codespaces](docs/codespaces.png)
